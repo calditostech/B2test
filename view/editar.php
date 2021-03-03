@@ -9,9 +9,9 @@
         <form method="post" action="../controller/ControllerEditar.php" id="form" name="form" onsubmit="validar(document.form); return false;" class="col-10">
             <div class="form-group">
                 <input class="form-control" type="text" id="nome" name="nome" value="<?php echo $editar->getNome(); ?>" required autofocus>
-                <input class="form-control" type="text" id="preco" name="preco" value="<?php echo $editar->getAutor(); ?>" required>
-                <input class="form-control" type="number" id="forncecedor" name="fornecedor" value="<?php echo $editar->getQuantidade(); ?>" required>
-                <input class="form-control" type="number" id="endereco" name="endereco" value="<?php echo $editar->getPreco(); ?>" required>
+                <input class="form-control" type="text" id="preco" name="preco" value="<?php echo $editar->getPreco(); ?>" required>
+                <input class="form-control" type="number" id="forncecedor" name="fornecedor" value="<?php echo $editar->getFornecedor(); ?>" required>
+                <input class="form-control" type="number" id="endereco" name="endereco" value="<?php echo $editar->getEndereco(); ?>" required>
                 <select name="flag">
                     <?php $c = $editar->getFlag();?>
                     <option value="<?php echo $editar->getFlag();?>"><?php echo  ($editar->getFlag()== 0)? "Desativado" :"Ativado" ?></option>

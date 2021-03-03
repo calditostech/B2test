@@ -11,7 +11,7 @@ class listarController{
     }
 
     private function criarTabela(){
-        $row = $this->lista->getLivro();
+        $row = $this->lista->getProduto();
         foreach ($row as $value){
             echo "<tr>";
             echo "<th>".$value['nome'] ."</th>";

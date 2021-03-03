@@ -7,11 +7,11 @@
     <div class="row">
         <form method="post" action="../controller/ControllerCadastro.php" id="form" name="form" onsubmit="validar(document.form); return false;" class="col-10">
             <div class="form-group">
-                <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome do Livro" required autofocus>
-                <input class="form-control" type="text" id="autor" name="preco" placeholder="Autor do Livro" required>
-                <input class="form-control" type="number" id="quantidade" name="fornecedor" placeholder="Quantidade de Páginas" required>
-                <input class="form-control" type="text" id="preco" name="endereco" placeholder="Preço do Livro" onkeypress="formatarMoeda();" required>
-                <input class="form-control" type="date" id="data" name="data" placeholder="Data de Pulicação" required>
+                <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome do Produto" required autofocus>
+                <input class="form-control" type="text" id="preco" name="preco" placeholder="Preço do produto" onkeypress="formatarMoeda();" required>
+                <input class="form-control" type="text" id="fornecedor" name="fornecedor" placeholder="Fornecedor" required>
+                <input class="form-control" type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+                <input class="form-control" type="date" id="data" name="data" placeholder="Data" required>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-success" id="cadastrar">Cadastrar</button>
