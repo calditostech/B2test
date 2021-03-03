@@ -45,7 +45,7 @@
 
 
         function validar(formulario) {
-            var quantidade = form.quantidade.value;
+            var quantidade = form.endereco.value;
             var preco = form.preco.value;
             for (i = 0; i <= formulario.length - 2; i++) {
                 if ((formulario[i].value == "")) {
@@ -54,9 +54,9 @@
                     return false;
                 }
             }
-            if (quantidade <= 0) {
+            if (endereco == 0) {
                 alert('A quantidade de páginas não pode ser igual ou inferior a 0');
-                form.quantidade.focus();
+                form.endereco.focus();
                 return false;
             }
             if (preco <= 0) {
